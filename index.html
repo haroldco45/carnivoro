@@ -186,6 +186,14 @@
     gap: 5px;
   }
 
+  /* Estilos específicos para el nuevo ícono de chorizos */
+  .chorizos-icon {
+    width: 24px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 2px; /* Espaciado con el texto */
+  }
+
   .menu-item {
     display: flex;
     justify-content: space-between;
@@ -235,10 +243,9 @@
 
   <div class="logo-area">
     <img src="carnivoro.png" class="logo-img" alt="Carnívoro Logo" />
-
     <div class="brand-name">CARNÍVORO</div>
     <div class="tagline">"El verdadero sabor a la parrilla"</div>
-    <div class="address">Calle 22, Caucasia (Antioquia)</div>
+    <div class="address">Calle 22 Barrio Kennedy, Caucasia</div>
   </div>
 
   <div class="divider"></div>
@@ -249,7 +256,7 @@
       <a href="tel:+573217947907" class="btn btn-llamar">📞  LLAMAR</a>
       <a href="https://www.instagram.com/carnivoro_caucasia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn btn-instagram">📷  INSTAGRAM</a>
     </div>
-    <a href="https://maps.app.goo.gl/tW8A7fRCHLw9Z7eT9" class="btn btn-ubicacion" target="_blank">📍  VER UBICACIÓN</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Calle+22+Barrio+Kennedy+Caucasia+Antioquia" class="btn btn-ubicacion" target="_blank">📍  VER UBICACIÓN</a>
   </div>
 
   <div class="menu-wrapper">
@@ -273,12 +280,15 @@
       <div class="menu-spacer"></div>
 
       <div class="cat-header">
-        <span class="cat-title"><span class="icon">🍢</span> CHORIZOS  <span class="cat-price">$18,000</span></span>
+        <span class="cat-title">
+          <img src="image_2.png" alt="Chorizos Icon" class="chorizos-icon">
+          CHORIZOS  <span class="cat-price">$18,000</span>
+        </span>
       </div>
-      <div class="menu-item" style="font-size:0.82rem;">Chorizo de chicharrón <span class="dots"></span></div>
-      <div class="menu-item" style="font-size:0.82rem;">Chorizo llanero <span class="dots"></span></div>
-      <div class="menu-item" style="font-size:0.82rem;">Chorizo argentino <span class="dots"></span></div>
-      <div class="menu-item" style="font-size:0.82rem;">Chorizo santarrosano <span class="dots"></span></div>
+      <div class="menu-item">Chorizo de chicharrón <span class="dots"></span></div>
+      <div class="menu-item">Chorizo llanero <span class="dots"></span></div>
+      <div class="menu-item">Chorizo argentino <span class="dots"></span></div>
+      <div class="menu-item">Chorizo santarrosano <span class="dots"></span></div>
 
       <div class="menu-spacer"></div>
 
