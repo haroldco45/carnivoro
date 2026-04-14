@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnívoro - Tarjeta Digital</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary: #e67e22;
+            --dark: #1a1a1a;
+            --white: #ffffff;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--dark); color: var(--white); margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .card { width: 90%; max-width: 400px; background: #2a2a2a; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: center; padding-bottom: 20px; border: 1px solid #444; }
+        .header-img { width: 100%; height: 200px; background: url('data:image/jpeg;base64,/9j/4AAQSkZJRg...') center/cover; } /* Aquí va el Base64 del logo/imagen */
+        .logo-container { margin-top: -60px; }
+        .logo { width: 120px; height: 120px; border-radius: 50%; border: 5px solid var(--dark); background: #fff; padding: 5px; }
+        h1 { margin: 10px 0 5px; font-size: 1.8rem; color: var(--primary); }
+        p { font-size: 0.9rem; color: #ccc; margin: 0 20px 15px; }
+        .btn-container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 0 20px; }
+        .btn { text-decoration: none; padding: 12px; border-radius: 10px; font-weight: bold; display: flex; align-items: center; justify-content: center; transition: 0.3s; font-size: 0.9rem; }
+        .btn-ws { background: #25d366; color: white; grid-column: span 2; }
+        .btn-call { background: #3498db; color: white; }
+        .btn-ig { background: #e1306c; color: white; }
+        .btn-map { background: #f1c40f; color: black; grid-column: span 2; }
+        .menu-pdf { margin-top: 20px; color: var(--primary); text-decoration: underline; cursor: pointer; }
+        .footer { font-size: 0.7rem; color: #666; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="card" id="mainCard">
+        <div class="header-img"></div>
+        <div class="logo-container">
+            <img src="https://i.imgur.com/your-processed-logo.png" alt="Logo Carnivoro" class="logo">
+        </div>
+        
+        <h1>CARNÍVORO</h1>
+        <p>"El verdadero sabor a la parrilla"</p>
+        <p><small>📍 Calle 22, Caucasia (Antioquia)</small></p>
+
+        <div class="btn-container">
+            <a href="https://wa.me/573217947907" class="btn btn-ws">WHATSAPP DIRECTO</a>
+            <a href="tel:3217947907" class="btn btn-call">LLAMAR</a>
+            <a href="https://www.instagram.com/carnivoro_caucaisa" class="btn btn-ig">INSTAGRAM</a>
+            <a href="https://www.google.com/maps/search/Calle+22+Pantojearte+Caucasia" class="btn btn-map">VER UBICACIÓN</a>
+        </div>
+
+        <p class="menu-pdf">Ver Menú Digital (PDF)</p>
+
+        <div class="footer">
+            Real time: 13/04/2026 | Colombia<br>
+            App desarrollada por <strong>Vibras Positivas (3117700431)</strong><br>
+            © Todos los derechos reservados.
+        </div>
+    </div>
+
+    <script>
+        // CONTROL INVISIBLE DE SUBSCRIPCIÓN
+        const fechaVencimiento = new Date('2027-04-13'); // 1 año de vigencia
+        const hoy = new Date();
+
+        if (hoy > fechaVencimiento) {
+            document.getElementById('mainCard').innerHTML = "<h2 style='padding:50px; color:white;'>Suscripción Expirada. Contacte al desarrollador.</h2>";
+        }
+    </script>
+</body>
+</html>
